@@ -24,6 +24,9 @@
             </div>
         </div>
 
+        <!-- Loading text -->
+        <div id="loading">Loading...</div>
+
         <div class="content1">
             <h2>Fighting Animation</h2>
             <div class="c1_container1">
@@ -339,6 +342,16 @@
             });
         });
     </script>
+
+
+
+
+    <script>//--------------------------------------------------FOR when it is still loading
+        window.onload = function() {
+          const loadingDiv = document.getElementById('loading');
+          loadingDiv.style.display = 'none';
+        };
+      </script>
 
 
 </body>
