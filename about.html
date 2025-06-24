@@ -5,6 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyle Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .content1{
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .column1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 12px;
+        }
+
+        .column1 img{
+            border-radius: 50%;
+            width: 200px;
+        }
+
+        .column1 .links{
+            color: rgb(85, 85, 255);   
+        }
+        .column1 .links img{
+            background-color: white;
+            width: 50px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .column1 .links div{
+            display: flex;
+            align-items: center;
+        }
+        .column1 .link_container1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .column1 .link_container2{
+            margin-left: 20px;
+        }
+
+        .column1 button{
+            border: none;
+            color: rgb(17, 17, 39);
+            background-color: white;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .column1 button:hover{
+            background-color: rgba(255, 255, 255, 0.548);
+        }
+
+        .column2{
+            background-color: rgba(255, 255, 255, 0.068);
+            flex: 1;
+            border-radius: 5px;
+            padding-right: 30px;
+        }
+        .column2 ul p{
+            text-align: justify;
+            font-size: 20px;
+        }
+
+
+        @media (max-width: 820px){
+            .content1{
+                display: flex;
+                flex-direction: column;
+            }
+            .column1{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        @media (max-width: 523px){
+            .column1 img{
+                width: 150px;
+            }
+            .column1 button{
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 481px){
+            .column1 .link_container2 img{
+                width: 30px;
+            }
+            .column1 .link_container2 .links div{
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 477px){
+            .content1 .link_container2 h3{
+                font-size: 18px;
+            }
+
+            .content1 .link_container1 img{
+                width:100px;
+            }
+            .column1 .link_container1 button{
+                width: 100px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -25,12 +140,53 @@
         </div>
 
         <div class="content1">
-            <img src="img/lyle.jpg" alt="profile" style="width: 100px;">
-            <h2>Ako si lyle</h2>
 
-            <a href="https://www.canva.com/design/DAGdGqPigcc/eWVlnjnx5uZ5tZhSE4kn-A/view?utm_content=DAGdGqPigcc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha4c56690d3">
-                My Resume
-            </a>
+            <div class="column1">
+                <div class="link_container1">
+                    <img src="img/lyle.jpg" alt="profile">
+                    <a href="https://www.canva.com/design/DAGdGqPigcc/eWVlnjnx5uZ5tZhSE4kn-A/view?utm_content=DAGdGqPigcc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha4c56690d3">
+                        <button>Open My Resume</button>
+                    </a>
+                </div>
+
+                
+                <div class="link_container2">
+                    <h3>Social Media Links:</h3>
+                    <a href="https://www.tiktok.com/@lazylyle" class="links">
+                        <div>
+                            <img src="img/tiktk.png" alt="logo">
+                            Tiktok: @lazylyle
+                        </div>
+                    </a>
+    
+                    <a href="https://www.youtube.com/@lazy-line2789" class="links">
+                        <div>
+                            <img src="img/youtube.png" alt="logo">
+                            Youtube: Lazy-Line
+                        </div>
+                    </a>
+    
+                    <a href="https://www.facebook.com/share/1B65eCaKHN/" class="links">
+                        <div>
+                            <img src="img/facebook.webp" alt="logo">
+                            Facebook: Lyle Duroy
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="column2">
+                <ul>
+                    <p>Greetings Sir/Maam</p>
+                    <p>&nbsp;&nbsp;I'm Lyle R. Duroy, an aspiring animator and an I.T graduate on CSUCC (Caraga State University Cabadbaran City). Ever since I was a child, I’ve been dreaming of becoming an animator one day. I watched cartoons and anime not just for fun, but to study and appreciate the beauty of animation and the creativity of the people behind it. I understand the suffering and how hard animation feels, that's why I admire animators and I want to become one of them, I keep learning, practicing, and exploring digital art on my own.</p>
+                    <p>&nbsp;&nbsp;Although my college degree is in I.T., I am thankful for the experiences I’ve gained in coding and developing systems, but I’ve always felt that animation is where I truly belong. It's what I’ve been craving to do for a lifetime, and I've always wanted to see real animators one day.</p>
+                    <p>&nbsp;&nbsp;I truly admire the creative energy behind Emottoons, I felt it when I first came to your company on our school field trip, and I would love the opportunity to grow and experience more in your company. I believe I still have a lot to learn, and I’m excited about that, I also believe I can contribute my creativity, and dedication in your company.</p>
+                    <p>Thank you for spending your time on my portfolio.</p>
+                </ul>
+            </div>
+            
+
+
 
         </div>
 
